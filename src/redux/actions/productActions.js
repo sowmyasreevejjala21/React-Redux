@@ -1,6 +1,6 @@
 
 import { ActionTypes } from "../constants/action-types";
-import fakeProductsApi from '../../containers/api/fakeProductsApi'
+import fakeProductsApi from '../../api/fakeProductsApi'
 
 export const fetchProducts = () => async (dispatch) => {
     const response = await fakeProductsApi.get("/products");
